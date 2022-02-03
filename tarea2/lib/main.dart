@@ -11,7 +11,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp>{
   int counter = 0;
   int f = 0;
-  Color iconColorM = Colors.blue;
+  Color iconColorM = Colors.black;
+  Color iconColorL = Colors.black;
   TextEditingController mtController = TextEditingController();
   TextEditingController kgController = TextEditingController();
   var mt = double.parse('0');
@@ -48,15 +49,15 @@ class _MyAppState extends State<MyApp>{
                         
                       });
                       if(f==1){
-                        iconColorM = Colors.blue;
                         f--;
                       }else{
+                        iconColorL = Colors.blue;
                         iconColorM = Colors.black;
                         f++;
                       }
                       print('$counter');
                     },
-                    icon: Icon(Icons.male, color: iconColorM),
+                    icon: Icon(Icons.male, color: iconColorL),
                   ),
                    
                 ],
@@ -70,10 +71,10 @@ class _MyAppState extends State<MyApp>{
                         
                       });
                       if(f==1){
-                        iconColorM = Colors.blue;
                         f--;
                       }else{
-                        iconColorM = Colors.black;
+                        iconColorM = Colors.blue;
+                        iconColorL = Colors.black;
                         f++;
                       }
                       print('$counter');
