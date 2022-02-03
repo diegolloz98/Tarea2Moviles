@@ -124,23 +124,26 @@ class _MyAppState extends State<MyApp>{
             title: Padding(
               padding: EdgeInsets.only(right: 24),
               child: TextField(
+                cursorColor: Colors.green,
                 controller: kgController,
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
+                  fillColor: Colors.green,
+                  iconColor: Colors.green,
+                  focusColor: Colors.green,
+                  hoverColor: Colors.green,
+                  prefixIconColor: Colors.green,
+                  suffixIconColor: Colors.green,
                   labelText: 'Ingresa peso (KG)',
                   hintText: 'Ingresa peso (KG)',
                   hintStyle: TextStyle(color: Colors.green),
                   labelStyle: TextStyle(color: Colors.green),
-                  suffixStyle: TextStyle(color: Colors.green),
-                  floatingLabelStyle: TextStyle(color: Colors.green),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.green),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.green),
                   ),
-                  fillColor: Colors.green,
-                  iconColor: Colors.green,
                   icon: Icon(
                           Icons.line_weight,
                           color: Colors.green,
