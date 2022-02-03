@@ -201,7 +201,7 @@ class _MyAppState extends State<MyApp>{
           Navigator.of(context).pop();
         },
         textColor: Theme.of(context).primaryColor,
-        child: Text('Close'),
+        child: Text('Aceptar'),
       ),
     ],
   );
